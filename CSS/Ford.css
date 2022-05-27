@@ -1,0 +1,578 @@
+@font-face {
+    font-family: "Lucida";
+    src: url(../Fonts/LCALLIG\(head\).TTF) format('truetype');
+}
+@font-face {
+    font-family: "Comic";
+    src: url(../Fonts/comic\(body\).ttf) format('truetype');
+}
+@font-face {
+    font-family: "Bahnschrift";
+    src: url(../Fonts/bahnschrift\(num\).ttf) format('truetype');
+}
+@font-face {
+    font-family: "Segoe";
+    src: url(../Fonts/seguiemj\(name\).ttf) format('truetype');
+}
+@font-face {
+    font-family: "Gabriola";
+    src: url(../Fonts/Gabriola\(btn\).ttf) format('truetype');
+}
+@font-face {
+    font-family: "Century";
+    src: url(../Fonts/CENSCBK\(error\).TTF) format('truetype');
+}
+
+
+body{
+    padding-top: 130px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0px;
+}
+header{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+.nav{
+    list-style-type: none;
+    margin: 0px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+.nav li{
+    display: inline-block;
+}
+.nav li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Lucida";
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+#first{
+    background-color: #1761CD;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 35px;
+}
+#first li{
+    margin-right: 50px;
+}
+#first li a i{
+    transition: color 0.3s;
+}
+#first li a i:hover{
+    color: black;
+}
+#phone{
+    list-style-type: none;
+    margin: 0px;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 35px;
+}
+#phone li{
+    margin-right: 15px;
+}
+#phone li i{
+    color: white;
+    transition: color 0.3s;
+    font-size: 28px;
+}
+#phone1{
+    display: inline-block;
+}
+#phone2{
+    display: none;
+}
+#num{
+    color: white;
+    font-family: "Bahnschrift";
+    display: none;
+    opacity: 0;
+}
+#phone li i:hover{
+    color: black;
+}
+#sec{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#sec li a{
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+#sec li a:hover{
+    background-color: #18428C;
+}
+#logo{
+    width: 40px;
+    height: auto;
+    align-self: center;
+    position: absolute;
+    right: 5%;
+    bottom: 24%;
+}
+.active{
+    color: white;
+    background-color: #18428C;
+    padding: 20px;
+    font-family: "Lucida";
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.content{
+    font-family: "Comic";
+}
+fieldset{
+    margin-bottom: 40px;
+    padding: 30px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+legend{
+    font-family: "Lucida";
+    font-weight: bold;
+    color: #1761CD;
+}
+#all{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1200px;
+    margin-bottom: 50px;
+}
+#first_row, #sec_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#third_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#inst{
+    margin-bottom: 35px;
+}
+#touch_screen{
+    display: none;
+}
+.slideShow{
+    width: 29%;
+    height: auto;
+    border: 1px solid #999;
+    padding: 2px;
+    transition: all 1s;
+}
+.fiesta, .ecoSport, .kuga, .fusion, .focus, .bronco, .f-150, .gt, .mustang{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+}
+.caption{
+    text-align: center;
+    padding: 15px;
+    font-family: "Comic";
+    margin-top: 0px;
+}
+#active{
+    display: block;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade{
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+#fiesta:hover{
+    border: 1px solid black;
+    width: 39%;
+    height: auto;
+    font-size: 150%;
+}
+#ecoSport:hover{
+    border: 1px solid black;
+    width: 39%;
+    height: auto;
+    font-size: 150%;
+}
+#kuga:hover{
+    border: 1px solid black;
+    width: 39%;
+    height: auto;
+    font-size: 150%;
+}
+#fusion:hover{
+    border: 1px solid black;
+    width: 39%;
+    height: auto;
+    font-size: 150%;
+}
+#focus:hover{
+    border: 1px solid black;
+    width: 39%;
+    height: auto;
+    font-size: 150%;
+}
+#bronco:hover{
+    border: 1px solid black;
+    width: 39%;
+    height: auto;
+    font-size: 150%;
+}
+#f-150:hover{
+    border: 1px solid black;
+    width: 39%;
+    height: auto;
+    font-size: 150%;
+}
+#gt:hover{
+    border: 1px solid black;
+    width: 39%;
+    height: auto;
+    font-size: 150%;
+}
+#mustang:hover{
+    border: 1px solid black;
+    width: 39%;
+    height: auto;
+    font-size: 150%;
+}
+
+#table_parent{
+    padding-bottom: 0px;
+}
+#table{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.table{
+    display: inline-block;
+    width: 45%;
+}
+table, tr, th, td{
+    border: 1px solid #18428C;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+}
+table{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+th{
+    font-family: "Gabriola";
+    font-size: 22px;
+    color: #1761CD;
+}
+td{
+    font-family: "Comic";
+}
+
+
+#footer{
+    margin-top: 50px;
+    background-color: #000;
+}
+#footer_img{
+    width: 100%;
+    height: 400px;
+    margin-top: auto;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+}
+#parent{
+    position: relative;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#logo2{
+    width: 100%;
+    height: 175px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#car4u{
+    width: 200px;
+    margin: auto;
+}
+#footer_content{
+    border-top: 1.5px solid #222222;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#follow{
+    color: white;
+    font-family: "Lucida";
+    text-align: center;
+}
+#line{
+    background-color: #1761CD;
+    width: 130px;
+    border: 1.5px solid #1761CD;
+    border-radius: 5px;
+}
+#ul_social{
+    width: 200px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 40px;
+}
+#ul_social i{
+    color: white;
+    transition: color 0.3s;
+}
+#ul_social i:hover{
+    color: #1761CD;
+}
+#num2{
+    color: white;
+    font-family: "Bahnschrift";
+    display: none;
+    opacity: 0;
+    margin-top: 0px;
+}
+#my_name_div{
+    position: relative;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-top: 1.5px solid #222222;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#my_name{
+    font-family: "Segoe";
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    bottom: 0px;
+}
+#inner_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 980px){
+    body{
+        padding-top: 200px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav li a{
+        font-size: 30px;
+    }
+    #first{
+        background-color: #1761CD;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 55px;
+    }
+    #phone{
+        list-style-type: none;
+        margin: 0px;
+        position: fixed;
+        top: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 55px;
+    }
+    #phone li i{
+        color: white;
+        transition: color 0.3s;
+        font-size: 46px;
+    }
+    #num{
+        font-size: 23px;
+    }    
+    #sec li a{
+        display: block;
+        text-align: center;
+        padding: 36px;
+    }
+    #logo{
+        width: 60px;
+        height: auto;
+        align-self: center;
+        position: absolute;
+        right: 5%;
+        bottom: 27%;
+    }
+    .active{
+        color: white;
+        background-color: #18428C;
+        padding: 36px;
+        font-family: "Lucida";
+        font-weight: bold;
+        font-size: 30px;
+    }
+    legend{
+        font-size: 28px;
+    }
+    #inst{
+        margin-bottom: 35px;
+        font-size: 26px;
+    }
+    #touch_screen{
+        display: block;
+        font-size: 26px;
+    }
+    #first_row, #sec_row, #third_row{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    #all{
+        height: auto;
+        width: 100%;
+    }
+    .slideShow{
+        margin: 25px;
+        width: 65%;
+    }
+    .caption{
+        font-size: 22px;
+        transition: 1s;
+    }
+    #fiesta:hover .fiesta .caption{
+        font-size: 36px;
+    }
+    #ecoSport:hover .ecoSport .caption{
+        font-size: 36px;
+    }
+    #kuga:hover .kuga .caption{
+        font-size: 36px;
+    }
+    #fusion:hover .fusion .caption{
+        font-size: 36px;
+    }
+    #focus:hover .focus .caption{
+        font-size: 36px;
+    }
+    #bronco:hover .bronco .caption{
+        font-size: 36px;
+    }
+    #f-150:hover .f-150 .caption{
+        font-size: 36px;
+    }
+    #gt:hover .gt .caption{
+        font-size: 36px;
+    }
+    #mustang:hover .mustang .caption{
+        font-size: 36px;
+    }
+    #fiesta:hover{
+        border: 1px solid black;
+        width: 95%;
+        height: auto;
+        font-size: 150%;
+    }
+    #ecoSport:hover{
+        border: 1px solid black;
+        width: 95%;
+        height: auto;
+        font-size: 150%;
+    }
+    #kuga:hover{
+        border: 1px solid black;
+        width: 95%;
+        height: auto;
+        font-size: 150%;
+    }
+    #fusion:hover{
+        border: 1px solid black;
+        width: 95%;
+        height: auto;
+        font-size: 150%;
+    }
+    #focus:hover{
+        border: 1px solid black;
+        width: 95%;
+        height: auto;
+        font-size: 150%;
+    }
+    #bronco:hover{
+        border: 1px solid black;
+        width: 95%;
+        height: auto;
+        font-size: 150%;
+    }
+    #f-150:hover{
+        border: 1px solid black;
+        width: 95%;
+        height: auto;
+        font-size: 150%;
+    }
+    #gt:hover{
+        border: 1px solid black;
+        width: 95%;
+        height: auto;
+        font-size: 150%;
+    }
+    #mustang:hover{
+        border: 1px solid black;
+        width: 95%;
+        height: auto;
+        font-size: 150%;
+    }
+    .table{
+        width: 75%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    td{
+        font-family: "Comic";
+        font-size: 22px;
+    }
+}
