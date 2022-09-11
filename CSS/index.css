@@ -263,9 +263,6 @@ legend{
 
 @media screen and (max-width: 1000px){
     body{
-        padding-top: 175px;
-        padding-left: 100px;
-        padding-right: 100px;
         margin: 0px;
         display: flex;
         flex-direction: column;
