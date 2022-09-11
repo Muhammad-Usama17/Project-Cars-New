@@ -32,6 +32,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-color: #F0F0FF;
 }
 header{
     position: fixed;
@@ -96,6 +97,9 @@ header{
 }
 #phone2{
     display: none;
+}
+#phone1, #phone2, #phone3{
+    cursor: pointer;
 }
 #num{
     color: white;

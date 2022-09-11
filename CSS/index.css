@@ -24,14 +24,16 @@
 }
 
 
+
 body{
-    padding-top: 105px;
-    padding-left: 100px;
-    padding-right: 100px;
     margin: 0px;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    background-color: #F0F0FF;
+}
+#hiddenHeader{
+    position: static;
+    visibility: hidden;
 }
 header{
     position: fixed;
@@ -97,6 +99,9 @@ header{
 #phone2{
     display: none;
 }
+#phone1, #phone2, #phone3{
+    cursor: pointer;
+}
 #num{
     color: white;
     font-family: "Bahnschrift";
@@ -129,10 +134,10 @@ header{
 
 #wallpaper{
     width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    padding: 0px;
-    margin: 0px;
+    height: 650px;
+    background-image: url(../Images/Mustang\ wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .fade{
     animation-name: fade;
@@ -150,7 +155,7 @@ fieldset{
     padding: 30px;
     padding-top: 0px;
     padding-bottom: 10px;
-    margin-top: 35px;
+    margin: 35px 100px;
 }
 legend{
     font-family: "Lucida";
@@ -261,13 +266,13 @@ legend{
 
 @media screen and (max-width: 1000px){
     body{
-        padding-top: 175px;
+        /* padding-top: 175px;
         padding-left: 100px;
-        padding-right: 100px;
+        padding-right: 100px; */
         margin: 0px;
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        /* height: 100vh; */
     }
     .nav li a{
         font-size: 30px;
@@ -309,6 +314,13 @@ legend{
         font-family: "Lucida";
         font-weight: bold;
         font-size: 30px;
+    }
+    #wallpaper{
+        width: 100%;
+        height: 650px;
+        background-image: url(../Images/Mustang\ wallpaper\ \(mobile\).jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
     }
     legend{
         font-size: 28px;

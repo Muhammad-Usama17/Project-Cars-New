@@ -32,6 +32,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-color: #F0F0FF;
 }
 header{
     position: fixed;
@@ -96,6 +97,9 @@ header{
 }
 #phone2{
     display: none;
+}
+#phone1, #phone2, #phone3{
+    cursor: pointer;
 }
 #num{
     color: white;
@@ -198,7 +202,10 @@ header{
     font-size: 22px;
 }
 #reset:hover{
-    background-color: #c1c1c1;
+    background-color: #C1C1C1;
+}
+#reset:active{
+    background-color: #ADADAD;
 }
 #email, #mobile, #password, #confirm, #address{
     display: block;

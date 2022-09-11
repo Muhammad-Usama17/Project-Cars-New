@@ -29,6 +29,7 @@ body{
     padding-left: 100px;
     padding-right: 100px;
     margin: 0px;
+    background-color: #F0F0FF;
 }
 header{
     position: fixed;
@@ -93,6 +94,9 @@ header{
 }
 #phone2{
     display: none;
+}
+#phone1, #phone2, #phone3{
+    cursor: pointer;
 }
 #num{
     color: white;
@@ -178,6 +182,7 @@ legend{
     width: 29%;
     height: auto;
     border: 1px solid #999;
+    border-radius: 5px;
     padding: 2px;
     transition: all 1s;
 }
@@ -185,11 +190,13 @@ legend{
     width: 100%;
     height: auto;
     display: none;
+    border-radius: 5px;
 }
 .img{
     width: 100%;
     height: auto;
     margin-bottom: 0px;
+    border-radius: 5px;
 }
 .caption{
     text-align: center;
